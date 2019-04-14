@@ -1,12 +1,8 @@
-// First screen which we will use to send the data
 import React, { Component } from 'react';
-//import react in our code.
 import { StyleSheet, View, Button, TextInput } from 'react-native';
-//import all the components we are going to use.
 
 export class NumsPage extends React.Component {
   constructor(props) {
-    //constructor to set default state
     super(props);
     this.state = {
       arrayLimit: '',
@@ -27,13 +23,13 @@ export class NumsPage extends React.Component {
         <TextInput
           value={this.state.arrayLimit}
           onChangeText={arrayLimit => this.setState({ arrayLimit })}
-          placeholder={'Enter a value'}
+          placeholder={'Enter array limit'}
           style={styles.input}
         />
         {/*Button to go to the next activity*/}
         <Button
-          title="Go Next"
-          //Button Title
+          title="Enter"
+          
           onPress={() =>
             navigate('ArrayScreen', {
               passedArrayLimit: this.state.arrayLimit,

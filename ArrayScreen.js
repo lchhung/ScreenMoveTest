@@ -1,8 +1,7 @@
-// Second screen which we will use to get the data
+
 import React, { Component } from 'react';
-//import react in our code.
+
 import { StyleSheet, View, Text } from 'react-native';
-//import all the components we are going to use.
 
 
 // this will receive the value enter from screen one and then pass
